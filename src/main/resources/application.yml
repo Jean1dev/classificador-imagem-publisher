@@ -1,19 +1,19 @@
 spring:
   rabbitmq:
-    host: localhost
+    host: ${MQ_HOST}
     port: 5672
-    username: guest
-    password: guest
-    virtual-host:
+    username: ${MQ_USER}
+    password: ${MQ_PWD}
+    virtual-host: ${MQ_VIRTUAL_HOST}
 
   data:
     mongodb:
-      uri: mongodb://localhost:27017/imagens_backend
+      uri: ${MONGO}
 
 aws:
-  access_key_id: AKIAIOSFODNN7EXAMPLE
-  secret_access_key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-  host: http://localhost:9444/s3
+  access_key_id: ${AWS_KEY}
+  secret_access_key: ${AWS_SECRET}
+  host:
   s3:
-    bucket: imagens
+    bucket: binnoroteirizacao
     region: us-east-1

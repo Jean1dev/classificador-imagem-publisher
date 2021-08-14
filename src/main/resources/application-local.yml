@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host:
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/imagens_backend
+
+aws:
+  access_key_id: AKIAIOSFODNN7EXAMPLE
+  secret_access_key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+  host: http://localhost:9444/s3
+  s3:
+    bucket: imagens
+    region: us-east-1
